@@ -15,7 +15,6 @@
           "id": 3,
           "name": "Orange",
           "price": 1.1,
-          "image":
-            "https://upload.wikimedia.org/wikipedia/commons/c/c4/Orange-Fruit-Pieces.jpg"
+          "image": "https://upload.wikimedia.org/wikipedia/commons/c/c4/Orange-Fruit-Pieces.jpg"
         }
 ]
