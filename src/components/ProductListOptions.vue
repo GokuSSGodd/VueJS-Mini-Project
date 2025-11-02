@@ -76,30 +76,7 @@ export default {
     return {
       searchText: "", // Bound to <input> using v-model
       selectedId: null, // Tracks which product is currently selected
-      products: [
-        // Sample dataset to display
-        {
-          id: 1,
-          name: "Apple",
-          price: 1.25,
-          image:
-            "https://upload.wikimedia.org/wikipedia/commons/1/15/Red_Apple.jpg",
-        },
-        {
-          id: 2,
-          name: "Banana",
-          price: 0.85,
-          image:
-            "https://upload.wikimedia.org/wikipedia/commons/8/8a/Banana-Single.jpg",
-        },
-        {
-          id: 3,
-          name: "Orange",
-          price: 1.1,
-          image:
-            "https://upload.wikimedia.org/wikipedia/commons/c/c4/Orange-Fruit-Pieces.jpg",
-        },
-      ],
+      products: []
     };
   },
 
@@ -142,7 +119,16 @@ export default {
   // ----------------------------
   // created() runs once after component instance is created
   created() {
-    console.log("App created — products loaded:", this.products.length);
+    this.products = fetch ("https://raw.githubusercontent.com/GokuSSGodd/VueJS-Mini-Project/main/fruits.json")
+    .then(response=>{
+      if(!response.ok){
+        throw new Error("HTTP error! status: ${response.status}");
+      }
+      return response.json();
+      }) .then (data=>{
+        this.products = data;
+      })
+      console.log("App created — products loaded:", this.products.length);
   },
 };
 </script>
@@ -251,3 +237,4 @@ img {
   padding: 6px;
 }
 </style>
+
