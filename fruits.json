@@ -16,5 +16,23 @@
           "name": "Orange",
           "price": 1.1,
           "image": "https://upload.wikimedia.org/wikipedia/commons/c/c4/Orange-Fruit-Pieces.jpg"
+        },
+        {
+          "id": 4,
+          "name": "Watermelon",
+          "price": 6.25,
+          "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Watermelon_cross_BNC.jpg/500px-Watermelon_cross_BNC.jpg"
+        },
+        {
+          "id": 5,
+          "name": "Cantaloupe",
+          "price": 3.75,
+          "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Cantaloupes.jpg/500px-Cantaloupes.jpg"
+        },
+        {
+          "id": 6,
+          "name": "Strawberry",
+          "price": 1.75,
+          "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Garden_strawberry_%28Fragaria_%C3%97_ananassa%29_single2.jpg/500px-Garden_strawberry_%28Fragaria_%C3%97_ananassa%29_single2.jpg"
         }
 ]
